@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="table_layout_style">
+        <item name="android:textViewStyle">@style/table_layout_style.textViewStyle</item>
+    </style>
+
+    <style name="table_layout_style.textViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:background">@drawable/table_content_stroke</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="table_first_style" parent="table_layout_style">
+        <item name="android:textViewStyle">@style/table_first_style.textViewStyle</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+    <style name="table_first_style.textViewStyle" parent="table_layout_style.textViewStyle">
+        <item name="android:background">@drawable/table_stroke</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    <style name="table_layout_style.last_row_appearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+</resources>

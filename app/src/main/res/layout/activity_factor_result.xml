@@ -6,4 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".FactorResult">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:theme="@style/table_layout_style">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/table_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4">
+
+                <TableRow android:theme="@style/table_first_style">
+
+                    <TextView android:text="NO." />
+
+                    <TextView android:text="Name" />
+
+                    <TextView android:text="Unit Price" />
+
+                    <TextView android:text="Count" />
+
+                    <TextView android:text="Total Price" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
