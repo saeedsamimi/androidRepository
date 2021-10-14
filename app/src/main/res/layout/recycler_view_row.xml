@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp"
+    app:strokeWidth="1dp"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="@drawable/stroke_color"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/txt_view_bg"
+            android:fontFamily="sans-serif-thin"
+            android:paddingBottom="3dp"
+            android:text="Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unit_price_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name_view"
+            android:layout_marginHorizontal="20dp"
+            android:text="UnitPrice"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/count_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unit_price_view"
+            android:layout_marginHorizontal="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Count" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/count_view"
+            android:layout_alignParentStart="true"
+            android:paddingHorizontal="5dp"
+            android:text="Edit"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_edit"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/del_btn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/count_view"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/edit_btn"
+            android:paddingHorizontal="5dp"
+            android:text="Delete"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_delete"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/total_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/count_view"
+            android:layout_alignBottom="@+id/del_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/del_btn"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Total" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
